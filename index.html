@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Couch Coder's Article Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootswatch CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css"> -->
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom Style Sheet CSS -->
+    <link rel="stylesheet" href="C:\Users\carin\OneDrive\Documents\Bootcamp\CouchCoders\style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- jumbotron -->
+        <div class="jumbotron col-sm-10 col-md-offset-1 ccjumbo">
+            <h1><i class="fas fa-couch" aria-hidden="true"></i>  Couch Coder's Search</h1>
+        </div>
+        <div class="row">
+            <!-- search panel -->
+            <div class="col-sm-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading searchPar">
+                        <h3 class="panel-title">Search Parameters</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="search">Search Term:</label>
+                                <input type="text" class="form-control" id="search">   </div>
+                            <div class="form-group">
+                                <label for="numRecords">Number of records to retreive:</label>
+                                <select class="form-control" id="numRecords">
+                                    <option value=1>1</option>
+                                    <option value=5 selected>5</option>
+                                    <option value=10>10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="startYear">Start Year:</label>
+                                <input type="text" class="form-control" id="startYear">   </div>
+                            <div class="form-group">
+                                <label for="endYear">End Year:</label>
+                                <input type="text" class="form-control" id="endYear">   </div>
+                            <button type="submit" class="btn btn-default button button-span button-span:after button-hoverspan button-hoverspan:after" id="searchBtn">Search</button>
+                            <button type="button" class="btn btn-default reset button button-span button-span:after button-hoverspan button-hoverspan:after" id="reset">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- results panel -->
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading searchPar">
+                        <h3 class="panel-title">Search Results</h3>
+                    </div>
+                    <div class="panel-body" id="wellSection">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="C:\Users\carin\OneDrive\Documents\Bootcamp\CouchCoders\script.js"></script>
+</body>
+
+</html>
